@@ -86,11 +86,13 @@ main .img-dos, main .img-cinco{
     flex-wrap: wrap;
     justify-content: center;
     
+    
   }
 h3{
     font-size: 38px;
     text-align: center;
     color: whitesmoke;
+    margin: 50px;
   }
   
   .icon-card{
@@ -110,7 +112,7 @@ h3{
     border-radius: 2px;
     flex-direction: column;
     margin: 40px;
-   
+    background-color: #5c3e62;
   }
   
   
