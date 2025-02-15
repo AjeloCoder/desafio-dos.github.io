@@ -1,0 +1,37 @@
+// Mixins
+@mixin centrar-horizontal {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+@mixin boton($color-fondo, $color-texto) {
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: 13px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+  
+@mixin card {
+    display: flex;
+    flex-direction: column;
+    border: 5px dashed $color-borde-tarjeta;
+    border-radius: 2px;
+    margin: 40px;
+    background-color: $color-tarjeta;
+}
+  
+@mixin media-tablet {
+    @media screen and (min-width: 600px) {
+      @content;
+    }
+}
+  
+@mixin media-desktop {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+}

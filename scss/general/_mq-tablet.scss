@@ -1,0 +1,35 @@
+@import "../utilidades/mixin";
+
+
+@include media-tablet {
+    main {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 40%);
+      column-gap: 1rem;
+  
+      .img-cuatro {
+        grid-column: span 2;
+      }
+    }
+  
+    footer {
+      div {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(2, 70%);
+        gap: 0%;
+        @include centrar-horizontal;
+  
+        .logo-alejo {
+          place-self: center;
+        }
+  
+        .redes {
+          width: 10vh;
+          height: 10vh;
+          place-self: center;
+        }
+      }
+    }
+  }
+  

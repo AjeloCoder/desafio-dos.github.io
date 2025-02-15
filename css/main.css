@@ -1,324 +1,280 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*import variables */
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color:#252326
+body {
+  background-color: #252326;
 }
 
-/* estilos del main */
-h2{
-    font-size: 35px;
-    text-align: center;
-    color: whitesmoke;
-    margin-top: 50px
-}
-.main{
-    background-color:cc8383;
-   
+h2 {
+  font-size: 35px;
+  text-align: center;
+  color: whitesmoke;
+  margin-top: 50px;
 }
 
-h1{
-    font-size: 54px;
-    color: whitesmoke;
-    text-align: center;
-    margin: 60px;
+h1 {
+  font-size: 54px;
+  color: whitesmoke;
+  text-align: center;
+  margin: 60px;
 }
 
-
-main div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+h3 {
+  font-size: 38px;
+  text-align: center;
+  color: whitesmoke;
+  margin: 50px;
 }
 
-main div .Alejo  {
-    height: 50vh;
-    width: 50vh;
-    margin: auto;   
-    object-fit: contain;
-    
+p {
+  color: whitesmoke;
 }
 
-main div .Alejo:hover{
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
+.main {
+  background-color: #cc8383;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main div .Alejo {
+  height: 50vh;
+  width: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+}
+main div .Alejo:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
 main div p {
-    align-items: center;
-    text-align: center;
-    font-size: 27px;
-    color: whitesmoke;
-    padding: 4vh;
+  align-items: center;
+  text-align: center;
+  font-size: 27px;
+  padding: 4vh;
 }
-.main-poke{
-    height: 75vh;
-    display: grid;
-    grid: template columns 1fr; ;
-    grid-template-rows:repeat(3, 25%) ;
-    align-content: center;
-    row-gap: 1rem;
-    padding: 1.5rem;
-   
+main .main-poke {
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 25%);
+  align-content: center;
+  row-gap: 1rem;
+  padding: 1.5rem;
 }
-
-
-main div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+main .main-poke img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
-
-main .img-dos, main .img-cinco{
-    display: none;
+main .img-dos,
+main .img-cinco {
+  display: none;
 }
 
-.seccion-gustos{
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    padding: 25px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-  }
-h3{
-    font-size: 38px;
-    text-align: center;
-    color: whitesmoke;
-    margin: 50px;
-  }
-  
-  .icon-card{
-    margin: 0, auto;
-    width: 90px;
-    height: 90px;
-    text-align: center;
-    margin: auto;
-    margin-top: 15px;
-  }
-  
-  .card{
-    display: flex;
-    width: 271px;
-    border: 5px solid #fef5c6;
-    border-style:dashed;
-    border-radius: 2px;
-    flex-direction: column;
-    margin: 40px;
-    background-color: #5c3e62;
-  }
-  
-  
-  .title-card{
-    color: whitesmoke;
-    font-size: 27px;
-    text-align: center;
-  }
-  
-  .p-card{
-    text-align: center;
-    color: whitesmoke;
-    padding: 12px;
-  }
-
-/* estilos de footer */
-
-footer{
-   color: whitesmoke;
-   font-size: 25px;
+.seccion-gustos {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  padding: 25px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.seccion-gustos .icon-card {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+.seccion-gustos .card {
+  display: flex;
+  flex-direction: column;
+  border: 5px dashed #fef5c6;
+  border-radius: 2px;
+  margin: 40px;
+  background-color: #5c3e62;
+}
+.seccion-gustos .card .title-card {
+  color: whitesmoke;
+  font-size: 27px;
+  text-align: center;
+}
+.seccion-gustos .card .p-card {
+  text-align: center;
+  padding: 12px;
 }
 
+footer {
+  color: whitesmoke;
+  font-size: 25px;
+}
 footer div {
-    text-align: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 5%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5%;
 }
-
-
-footer div p{
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+footer div p {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-
 footer div img {
-    justify-content: center;
-    height: 15vh;
-    width: 15vh;
-    
+  justify-content: center;
+  height: 15vh;
+  width: 15vh;
 }
 
 .contact {
-    background-color: #141414;
-    width: 100%;
-    padding: 0 20px;
-    height: 600px;
-  }
-  
-.contenedor-titulo-h3 {
-    display: flex;
-    flex-direction: column;
+  background-color: #141414;
+  width: 100%;
+  padding: 0 20px;
+  height: 600px;
 }
-  
-.titulo-h3 {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    margin: 0 auto;
-    margin-top: 70px;
+.contact .contenedor-titulo-h3 {
+  display: flex;
+  flex-direction: column;
 }
-  
-.form {
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-    max-width: 376px;
-    margin: 0 auto;
+.contact .contenedor-titulo-h3 .titulo-h3 {
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
 }
-  
-  
-.label {
-    display: block;
-    font-size: 13px;
-    color: white;
-    margin-bottom: 9px;
-    margin-top: 25px;
+.contact .form {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 100%;
+  max-width: 376px;
 }
-  
-.input-text, .textarea {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border: 3px solid #2c2c2c;
-    border-radius: 4px;
-    font-size: 13px;
-    display: block;
-    width: 100%;
-    padding: 10px;
+.contact .form .label {
+  display: block;
+  font-size: 13px;
+  color: whitesmoke;
+  margin-bottom: 9px;
+  margin-top: 25px;
 }
-  
-.textarea {
-    min-height: 113px;
+.contact .form .input-text,
+.contact .form .textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 3px solid #2c2c2c;
+  border-radius: 4px;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+  padding: 10px;
 }
-  
-.button {
-    width: 100%;
-    background-color: #ffd953;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 19px;
-    padding: 13px;
-    margin-top: 60px;
+.contact .form .textarea {
+  min-height: 113px;
 }
-  
-
-
-
-/* MQ */
-
-
-    
+.contact .form .button {
+  background-color: #ffd953;
+  color: black;
+  padding: 13px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 60px;
+}
 
 @media screen and (min-width: 600px) {
-    main{
-        grid-template-columns:repeat(2, 1fr) ;
-        grid-template-rows:repeat(2, 40%) ;
-        column-gap: 1rem;
-    }
-    
-    
-    main .img-cuatro{
-        grid-column: span 2;
-    }
-   
-    footer div {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
-        grid-template-rows: repeat(2, 70%);
-        gap: 0%;
-        margin: auto;
-    }
-
-    footer .logo-alejo{
-        place-self: center;
-    }
-
-    footer .redes{
-        width: 10vh;
-        height: 10vh;
-        place-self: center;
-    }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    column-gap: 1rem;
+  }
+  main .img-cuatro {
+    grid-column: span 2;
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 70%);
+    gap: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer div .logo-alejo {
+    place-self: center;
+  }
+  footer div .redes {
+    width: 10vh;
+    height: 10vh;
+    place-self: center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 35%;
+  }
+  main div .Alejo {
+    width: 70vh;
+    height: 70vh;
+  }
+  main div p {
+    font-size: 27px;
+    font-weight: 100;
+  }
+  main .img-dos,
+  main .img-cinco {
+    display: block;
+  }
+  main .img-uno,
+  main .img-tres {
+    grid-row: span 2;
+  }
+  main .img-dos,
+  main .img-cuatro {
+    grid-column: span 1;
+  }
+  main .img-cinco {
+    grid-column: span 3;
+  }
+  footer .logo-alejo {
+    width: 20vh;
+    height: 20vh;
+  }
+  .input-text,
+  .textarea {
+    font-size: 18px;
+  }
+  .form {
+    max-width: 376px;
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+  .titulo-h3 {
+    font-size: 48px;
+    margin-top: 116px;
+    margin-right: 100px;
+  }
+  .contenedor-titulo-h3 {
+    flex-direction: row;
+  }
 }
 
-@media screen and (min-width: 1024px){
-    main{
-        grid-template-columns:repeat(3, 1fr) ;
-        grid-template-rows:30% 30% 35% ;
-    }
-    h1{
-        font-size: 75px;
-    }
-    main div{
-        flex-direction: row;
-        flex-wrap: wrap-reverse;
-    }
-    main div  .Alejo{
-        width: 70vh;
-        height: 70vh;
-    }
-    main div p{
-        font-size: 27px;
-        font-weight: 100;
-    }
-    main .img-dos,  main .img-cinco{
-        display: block;
-    }
-    main .img-uno, main .img-tres{
-        grid-row: span 2;
-    }
-    
-    main .img-dos, main .img-cuatro{
-        grid-column: span 1;
-    }
-
-    main .img-cinco{
-        grid-column: span 3;
-    }
-
-    footer .logo-alejo{
-        width: 20vh;
-        height: 20vh;
-    }
-
-    .input-text,
-    .textarea {
-      font-size: 18px;
-    }
-
-    .form {
-        max-width: 376px;
-        margin-top: 116px;
-        padding-top: 0px;
-        margin-left: 100px;
-      }
-
-    .titulo-h3 {
-        font-size: 48px;
-        margin-top: 116px;
-        margin-right: 100px;
-      }
-      .contenedor-titulo-h3 {
-        flex-direction: row;
-      }
-}
+/*# sourceMappingURL=main.css.map */

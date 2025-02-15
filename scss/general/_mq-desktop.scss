@@ -1,0 +1,68 @@
+@import "../utilidades/mixin";
+
+
+@include media-desktop {
+    main {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 30% 30% 35%;
+  
+      div {
+        .Alejo {
+          width: 70vh;
+          height: 70vh;
+        }
+  
+        p {
+          font-size: 27px;
+          font-weight: 100;
+        }
+      }
+  
+      .img-dos,
+      .img-cinco {
+        display: block;
+      }
+  
+      .img-uno,
+      .img-tres {
+        grid-row: span 2;
+      }
+  
+      .img-dos,
+      .img-cuatro {
+        grid-column: span 1;
+      }
+  
+      .img-cinco {
+        grid-column: span 3;
+      }
+    }
+  
+    footer {
+      .logo-alejo {
+        width: 20vh;
+        height: 20vh;
+      }
+    }
+  
+    .input-text,
+    .textarea {
+      font-size: 18px;
+    }
+  
+    .form {
+      max-width: 376px;
+      margin-top: 70px;
+      margin-left: 100px;
+    }
+  
+    .titulo-h3 {
+      font-size: 48px;
+      margin-top: 116px;
+      margin-right: 100px;
+    }
+  
+    .contenedor-titulo-h3 {
+      flex-direction: row;
+    }
+  }

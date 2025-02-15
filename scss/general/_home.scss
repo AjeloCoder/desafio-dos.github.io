@@ -1,0 +1,182 @@
+//importar variables 
+
+@import "../utilidades/variables";
+
+//import mixin 
+
+@import "../utilidades/mixin";
+
+// Estilos del main
+.main {
+    background-color: $color-secundario;
+}
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  
+      .Alejo {
+        height: 50vh;
+        width: 50vh;
+        @include centrar-horizontal;
+        object-fit: contain;
+  
+        &:hover {
+          transform: scale(1.1);
+          transition: transform 0.3s ease-in-out;
+        }
+      }
+  
+      p {
+        align-items: center;
+        text-align: center;
+        font-size: 27px;
+        padding: 4vh;
+      }
+    }
+  
+    .main-poke {
+      height: 75vh;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 25%);
+      align-content: center;
+      row-gap: 1rem;
+      padding: 1.5rem;
+  
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    .img-dos,
+    .img-cinco {
+      display: none;
+    }
+  }
+  
+  
+  .seccion-gustos {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    padding: 25px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    .icon-card {
+      width: 90px;
+      height: 90px;
+      text-align: center;
+      @include centrar-horizontal;
+      margin-top: 15px;
+    }
+  
+    .card {
+      @include card;
+  
+      .title-card {
+        color: $color-blanco;
+        font-size: 27px;
+        text-align: center;
+      }
+  
+      .p-card {
+        text-align: center;
+        padding: 12px;
+      }
+    }
+  }
+  
+  // Estilos del footer
+  footer {
+    color: $color-blanco;
+    font-size: 25px;
+  
+    div {
+      text-align: center;
+      justify-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 5%;
+  
+      p {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      img {
+        justify-content: center;
+        height: 15vh;
+        width: 15vh;
+      }
+    }
+  }
+  
+  .contact {
+    background-color: $color-fondo-contacto;
+    width: 100%;
+    padding: 0 20px;
+    height: 600px;
+  
+    .contenedor-titulo-h3 {
+      display: flex;
+      flex-direction: column;
+  
+      .titulo-h3 {
+        text-align: center;
+        font-size: 30px;
+        color: $color-blanco;
+        @include centrar-horizontal;
+        margin-top: 70px;
+      }
+    }
+  
+    .form {
+      @include centrar-horizontal;
+      padding: 20px;
+      width: 100%;
+      max-width: 376px;
+  
+      .label {
+        display: block;
+        font-size: 13px;
+        color: $color-blanco;
+        margin-bottom: 9px;
+        margin-top: 25px;
+      }
+  
+      .input-text,
+      .textarea {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+          Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        border: 3px solid $color-input-border;
+        border-radius: 4px;
+        font-size: 13px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+      }
+  
+      .textarea {
+        min-height: 113px;
+      }
+  
+      .button {
+        @include boton($color-boton-contacto, black);
+        margin-top: 60px;
+      }
+    }
+  }
+  

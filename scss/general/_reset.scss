@@ -1,0 +1,43 @@
+/*import variables */
+@import "../utilidades/variables";
+
+/* reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+// Estilos generales
+
+body {
+    background-color: $color-principal;
+  }
+  
+  h2 {
+    font-size: 35px;
+    text-align: center;
+    color: $color-blanco;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 54px;
+    color: $color-blanco;
+    text-align: center;
+    margin: 60px;
+  }
+  
+  h3 {
+    font-size: 38px;
+    text-align: center;
+    color: $color-blanco;
+    margin: 50px;
+  }
+  
+  p {
+    color: $color-blanco;
+  }
+
