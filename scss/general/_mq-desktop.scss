@@ -3,8 +3,9 @@
 
 @include media-desktop {
     main {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 30% 30% 35%;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 30% 30% 45%;
+      
   
       div {
         .Alejo {
@@ -44,6 +45,9 @@
         height: 20vh;
       }
     }
+    .contenedor-titulo-h3{
+      flex-direction: row
+    }
   
     .input-text,
     .textarea {
@@ -58,11 +62,13 @@
   
     .titulo-h3 {
       font-size: 48px;
-      margin-top: 116px;
-      margin-right: 100px;
+      margin: auto;
+    
     }
   
-    .contenedor-titulo-h3 {
-      flex-direction: row;
+    .contact{
+      justify-content: space-around;
+  
     }
+    
   }
